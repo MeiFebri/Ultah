@@ -1,0 +1,94 @@
+/* Reset dasar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffe6f0, #ffb6c1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fcfcfc;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.gift-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Gambar kado */
+.gift-image {
+  width: 200px;
+  animation: bounce 1.5s infinite;
+  margin-bottom: 16px;
+}
+
+/* Animasi melompat-lompat kecil */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Tombol umum */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
+
+/* Foto kakak */
+.photo {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Bagian surprise (disembunyikan awalnya, muncul dengan JavaScript) */
+.surprise {
+  margin-top: 30px;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Efek transisi */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

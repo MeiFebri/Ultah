@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ucapan Ulang Tahun</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="ultah.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="gift-box">
+        <img
+          src="happy-birthday-raju.gif"
+          class="gift-image"
+          id="giftImage"
+          alt="Gift Image"
+        />
+        <button id="openGiftBtn">🎁 Silakan Buka Kadonya</button>
+      </div>
+
+      <!-- Ini bagian konten setelah tombol diklik (awalnya disembunyikan lewat CSS/JS) -->
+      <div class="surprise" id="surpriseSection" style="display: none">
+        <img src="kaka.gif" alt="Foto Kakak" class="photo" />
+        <button id="whatsappBtn">
+          💬 Kirim Ucapan Terima Kasih via WhatsApp
+        </button>
+      </div>
+    </div>
+
+    <script src="ultah.js"></script>
+  </body>
+</html>
